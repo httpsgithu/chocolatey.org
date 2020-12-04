@@ -1,0 +1,242 @@
+﻿@{
+    ViewBag.Title = "Solutions | Secure Offline Deployments";
+    Bundles.Reference("Content/dist/chocolatey.slim.css");
+    Bundles.Reference("Scripts");
+}
+
+<div id="header" class="bg-medium-dark">
+    <section class="py-3 py-lg-5">
+        <div class="container-fluid py-3">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h3 class="text-uppercase">A Chocolatey Solution Brief</h3>
+                    <h1 class="mb-0">How to Manage Windows Software with an Offline Deployments Solution</h1>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</div>
+<section class="py-3 py-lg-5">
+    <div class="container">
+        <div class="card card-body">
+            <h4 class="text-center mb-3">Chocolatey for Business customers are some of the largest and most secure organizations in the world.</h4>
+            <h5>With these customers, we have created a best practice solution called Offline Deployments based on their complex IT landscape and security constraints.</h5>
+            <p class="mb-0">This Solution Brief describes the Offline Deployments solution and offers a choice of three patterns. The pattern you choose depends on the constraints you have, and those constraints are often security constraints.</p>
+        </div>
+        <h3 class="text-center mt-5 mb-4">Offline Deployments Are Driven by Security Needs</h3>
+        <div class="row text-center align-items-center">
+            <div class="col-lg-6">
+                <img class="img-fluid shadow lazy" src="@Links.Content.Images.blankImage" data-src="@Url.Content("~/content/images/stock/people-whiteboard-600.jpg")" alt="People working on a whiteboard" title="People working on a whiteboard" />
+                <h5 class="mt-3">"How do we use Chocolatey for Business to automate our Windows software management inline with industry-standard security practices?"</h5>
+            </div>
+            <div class="col-lg-6">
+                <i class="fas fa-stop-circle h1 text-danger"></i>
+                <h4 class="text-danger">Protect Your Software</h4>
+                <p>Create an internal software repository with curated packages and restrict access to uploads and downloads.</p>
+                <a href="https://www.ncsc.gov.uk/collection/developers-collection/principles/protect-your-code-repository" target="_blank" rel="noreferrer">Read National Cyber Security Center advice</a><br />
+
+                <i class="fas fa-stop-circle h1 text-danger mt-4"></i>
+                <h4 class="text-danger">Isolate Your Endpoints</h4>
+                <p>Use network architectures and air-gap techniques to isolate locations and individual endpoints.</p>
+                <a href="https://en.wikipedia.org/wiki/Air_gap_(networking)" target="_blank" rel="noreferrer">Read about air gap architectures</a>
+            </div>
+        </div>
+        <h3 class="text-center mt-5 mb-4">Four Ways These Security Constraints Can Impact System Administrators</h3>
+        <div class="row text-center">
+            <div class="col-md-6 col-xl-3">
+                <h4>1. Architecture</h4>
+                <p>Where do you deploy your repository and Chocolatey for Business in relation to your endpoints?</p>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <h4>2. Installation</h4>
+                <p>How do you configure the software and endpoints in multiple locations and on air-gapped systems?</p>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <h4>3. Operation</h4>
+                <p>The day in the life of a SysAdmin, getting the software to the repository and managing Chocolatey for Business.</p>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <h4>4. Optimization</h4>
+                <p>Using the virtual appliance approach with <a href="https://docs.chocolatey.org/en-us/quick-deployment/" target="_blank">Chocolatey Quick Deployment Environment.</a></p>
+            </div>
+        </div>
+        <h3 class="text-center mt-5 mb-4">Applying this Offline Deployments solution with Chocolatey for Business is a real-world, in-production answer that meets the most common security requirements in software management.</h3>
+        <h4>In This Guide</h4>
+        <ol>
+            <li><a href="#introducing-qde">Introducing the Quick Development Environment</a></li>
+            <li><a href="#internal-deployment">Pattern 1 – Internal Deployment</a></li>
+            <li><a href="#remote-deployment">Pattern 2 – Remote Deployment</a></li>
+            <li><a href="#isolated-deployment">Pattern 3 – Isolated Deployment</a></li>
+        </ol>
+    </div>
+</section>
+<section id="introducing-qde" class="bg-white py-3 py-lg-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Introducing the Quick Deployment Environment</h2>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <p>All of the patterns described in this solution use the Chocolatey for Business virtual appliance called the Quick Deployment Environment, or QDE.</p>
+                <p>QDE is a production-ready, all-in-one virtual appliance and scales to manage a thousand endpoints.</p>
+                <p>It contains Chocolatey for Business, Jenkins and a Sonatype Nexus repository out of the box.</p>
+                <a href="https://docs.chocolatey.org/en-us/quick-deployment/" target="_blank">Learn more about the QDE here.</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-center">
+                    <img class="lazy img-fluid" src="@Links.Content.Images.blankImage" data-src="https://docs.chocolatey.org/assets/images/quickdeploy/QDE-architecture.gif" alt="Quick Deployment Environment Architecture" title="Quick Deployment Environment Architecture" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-3 py-lg-5 bg-dark text-white">
+    <div class="container">
+        <h2 class="text-center">Which offline deployment solution do you need?</h2>
+        <h4 class="text-center mb-4">There are three slightly varied patterns to solve the same solution, depending on the constraints you have.</h4>
+        <div class="row text-center">
+            <div class="col-lg-4">
+                <a href="#internal-deployment">
+                    <h4 class="btn-link text-white">1. Internal</h4>
+                    <img class="img-fluid" width="200" src="@Url.Content("~/content/images/deployment-pattern-internal-dark.png")" alt="Internal Deployment Pattern" title="Internal Deployment Pattern" />
+                </a>
+                <ul class="d-flex flex-column align-items-center mt-3 pl-0 fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Private repository</li>
+                    <li><span class="fa-li"><i class="fas fa-times text-danger"></i></span>Offline location</li>
+                    <li><span class="fa-li"><i class="fas fa-times text-danger"></i></span>Air-gapped endpoint</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <a href="#remote-deployment">
+                    <h4 class="btn-link text-white">2. Remote</h4>
+                    <img class="img-fluid lazy" width="200" src="@Links.Content.Images.blankImage" data-src="@Url.Content("~/content/images/deployment-pattern-remote-dark.png")" alt="Remote Deployment Pattern" title="Remote Deployment Pattern" />
+                </a>
+                <ul class="d-flex flex-column align-items-center mt-3 pl-0 fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Private repository</li>
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Offline location</li>
+                    <li><span class="fa-li"><i class="fas fa-times text-danger"></i></span>Air-gapped endpoint</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <a href="#isolated-deployment">
+                    <h4 class="btn-link text-white">3. Isolated</h4>
+                    <img class="img-fluid lazy" width="200" src="@Links.Content.Images.blankImage" data-src="@Url.Content("~/content/images/deployment-pattern-isolated-dark.png")" alt="Isolated Deployment Pattern" title="Isolated Deployment Pattern" />
+                </a>
+                <ul class="d-flex flex-column align-items-center mt-3 pl-0 fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Private repository</li>
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Offline location</li>
+                    <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Air-gapped endpoint</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="internal-deployment" class="bg-white py-3 py-lg-5">
+    <div class="container">
+        <div class="d-flex mb-3 align-items-center">
+            <img class="img-fluid mr-3 lazy" width="150" src="@Links.Content.Images.blankImage" data-src="@Url.Content("~/content/images/deployment-pattern-internal-light.png")" alt="Internal Deployment Pattern" title="Internal Deployment Pattern" />
+            <div>
+                <h2>1. Internal Deployment</h2>
+                <h4 class="mb-0">It is the default for most Chocolatey for Business customers to secure their software deployments by using an internal (private, secure and self-curated) software repository.</h4>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <p>This pattern reduces the risk of malware by forcing endpoints to use a secure internal repository as their software source instead of public community repositories. It also protects against malicious internal actors.</p>
+                <p><strong>An Internal Deployment is not limited to one location.</strong> If you have the right network infrastructure you could extend this to remote locations/branches in a "hub-and-spoke" model with HQ as the hub, where the <a href="https://docs.chocolatey.org/en-us/quick-deployment/" target="_blank">Quick Deployment Environment</a> (QDE) is deployed, and QDE-client endpoints in remote branch offices “calling home” for software.</p>
+            </div>
+            <div class="col-lg-6">
+                <h5>Steps Required to Implement the Internal Deployment Pattern</h5>
+                <ol>
+                    <li>Use the <a href="https://docs.chocolatey.org/en-us/quick-deployment/" target="_blank">Chocolatey Quick Deployment Environment</a> so you don’t need to hand-install the repository and Chocolatey components.</li>
+                    <li>Add packages and a <a href="@Url.RouteUrl(RouteName.Products, new {productName = "chocolatey-for-business"})#pricing" target="_blank">Chocolatey for Business license</a> to the repository.</li>
+                    <li>Use <a href="@Url.RouteUrl(RouteName.Products, new {productName = "chocolatey-for-business"})#feature-2" target="_blank">Package Internalizer</a> to curate selected community packages to the internal repository.</li>
+                    <li><a href="https://docs.chocolatey.org/en-us/quick-deployment/setup/client-setup" target="_blank">Connect the endpoints</a> and configure them to use the QDE repository.</li>
+                    <li>Use <a href="@Url.RouteUrl(RouteName.Products, new {productName = "chocolatey-for-business"})#feature-5" target="_blank">Package Synchronizer</a> to curate existing, deployed but unmanaged software from endpoints to the internal repository.</li>
+                </ol>
+            </div>
+        </div>
+        @*<div class="text-center">
+            <a class="btn btn-success" href="#" target="_blank">View the Internal Deployment Implementation Guide</a>
+        </div>*@
+    </div>
+</section>
+<section id="remote-deployment" class="py-3 py-lg-5">
+    <div class="container">
+        <div class="d-flex mb-3 align-items-center">
+            <img class="img-fluid mr-3 lazy" width="150" src="@Links.Content.Images.blankImage" data-src="@Url.Content("~/content/images/deployment-pattern-remote-light.png")" alt="Remote Deployment Pattern" title="Remote Deployment Pattern" />
+            <div>
+                <h2>2. Remote Deployment</h2>
+                <h4 class="mb-0">Some organizations need to do a little more than the Internal Deployment pattern because they have an additional constraint: they need to deploy Chocolatey for Business to secure remote locations where no internet connectivity is limited or not available.</h4>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <p><strong>The added complications arise during initial deployment and continued operation:</strong></p>
+                <ul>
+                    <li>How do we get software into the disconnected remote location?</li>
+                    <li>How do we then manage the software and endpoints in the remote location using Chocolatey for Business?</li>
+                </ul>
+                <p><strong>The answer to this is to split the previous Internal pattern into two parts:</strong></p>
+                <ul>
+                    <li>Prepare the QDE in a “normal” connected environment onto removable media (or maybe you have a VPN or DMZ and can use that).</li>
+                    <li>Take the removable media preparation to the remote location (or copy over the VPN) and deploy the solution.</li>
+                </ul>
+                <p><strong>This also requires a different ongoing remote operating model:</strong></p>
+                <ul>
+                    <li>The endpoints at the remote location will access their local QDE repository across their local shared network that is not connected to the internet.</li>
+                    <li>The remote endpoints will not “call HQ” for software. If they call HQ then that is a “branch-to-HQ” or “hub-and-spoke” model, not a disconnected remote location.</li>
+                    <li>To update the remote repository and therefore the endpoints will require an administrator to visit the remote location with the software on removable media.</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <h5>Steps Required to Implement the Remote Deployment Pattern</h5>
+                <ol>
+                    <li>Start the preparation in an internet-connected location.</li>
+                    <li>Use the <a href="https://docs.chocolatey.org/en-us/quick-deployment/" target="_blank">Chocolatey Quick Deployment Environment</a> so you don’t need to hand-install the repository and Chocolatey components.</li>
+                    <li>Add packages and a <a href="@Url.RouteUrl(RouteName.Products, new {productName = "chocolatey-for-business"})#pricing" target="_blank">Chocolatey for Business license</a> to the repository.</li>
+                    <li>Use <a href="@Url.RouteUrl(RouteName.Products, new {productName = "chocolatey-for-business"})#feature-2" target="_blank">Package Internalizer</a> to curate selected community packages to the internal repository.</li>
+                    <li>Store the prepared QDE environment on removable media if there is no secure connection (VPN or DMZ) to the remote location.</li>
+                    <li>Deploy the QDE on a networked server in the remote location so clients can access it.</li>
+                    <li><a href="https://docs.chocolatey.org/en-us/quick-deployment/setup/client-setup" target="_blank">Connect the endpoints</a> and configure them to use the QDE repository.</li>
+                    <li>Use <a href="@Url.RouteUrl(RouteName.Products, new {productName = "chocolatey-for-business"})#feature-5" target="_blank">Package Synchronizer</a> to curate existing, deployed but unmanaged software from endpoints to the internal repository.</li>
+                </ol>
+            </div>
+        </div>
+        @*<div class="text-center">
+            <a class="btn btn-success" href="#" target="_blank">View the Remote Deployment Implementation Guide</a>
+        </div>*@
+    </div>
+</section>
+<section id="isolated-deployment" class="py-3 py-lg-5 bg-white">
+    <div class="container">
+        <div class="d-flex mb-3 align-items-center">
+            <img class="img-fluid mr-3 lazy" width="150" src="@Links.Content.Images.blankImage" data-src="@Url.Content("~/content/images/deployment-pattern-isolated-light.png")" alt="Isolated Deployment Pattern" title="Isolated Deployment Pattern" />
+            <div>
+                <h2>3. Isolated Deployment</h2>
+                <h4 class="mb-0">In the most secure organizations, not only a secure remote locations not connected to the internet, but each individual endpoint is air-gapped from the network and each other.</h4>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <p>It is still possible and beneficial to use Chocolatey for Business in this locked-down scenario because of all of the ease-of-use features you get in C4B. If you decided to use Chocolatey Open Source you would have to build these features yourself.</p>
+                <p>Similar to the Remote Deployment, the to-be-implemented solution is first prepared at a site with internet connectivity then transferred to each air-gapped endpoint on removable media. </p>
+            </div>
+            <div class="col-lg-6">
+                <h5>Steps Required to Implement the Isolated Deployment Pattern</h5>
+                <ol>
+                    <li>Start the preparation in an internet-connected location.</li>
+                    <li>Use the <a href="https://docs.chocolatey.org/en-us/quick-deployment/" target="_blank">Chocolatey Quick Deployment Environment</a> so you don’t need to hand-install the repository and Chocolatey components.</li>
+                    <li>Add packages and a <a href="@Url.RouteUrl(RouteName.Products, new {productName = "chocolatey-for-business"})#pricing" target="_blank">Chocolatey for Business license</a> to the repository.</li>
+                    <li>Use <a href="@Url.RouteUrl(RouteName.Products, new {productName = "chocolatey-for-business"})#feature-2" target="_blank">Package Internalizer</a> to curate selected community packages to the internal repository.</li>
+                    <li>Store the prepared QDE environment on removable media.</li>
+                    <li>Deploy the QDE appliance from the removable media onto each air-gapped endpoint.</li>
+                    <li><a href="https://docs.chocolatey.org/en-us/quick-deployment/setup/client-setup" target="_blank">Configure the endpoint</a> to use the QDE repository.</li>
+                    <li>Use <a href="@Url.RouteUrl(RouteName.Products, new {productName = "chocolatey-for-business"})#feature-5" target="_blank">Package Synchronizer</a> to curate existing, deployed but unmanaged software from endpoints to the internal repository.</li>
+                </ol>
+            </div>
+        </div>
+        @*<div class="text-center">
+            <a class="btn btn-success" href="#" target="_blank">View the Remote Deployment Implementation Guide</a>
+        </div>*@
+    </div>
+</section>
