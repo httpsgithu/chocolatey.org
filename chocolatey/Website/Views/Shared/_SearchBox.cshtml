@@ -1,19 +1,8 @@
 ﻿@using NuGetGallery
-@{
-    var pagePackages = ViewContext.RouteData.Values["Action"].Equals("ListPackages");
-    var searchAction = string.Empty;
-    if (pagePackages) {
-        searchAction =  @Url.PackageList();
-    }
-    else
-    {
-        searchAction = @Url.SearchResults();
-    }
-}
 
-<form class="form-inline search-box position-relative" autocomplete= "off" role="search" action="@searchAction" method="get">
+<form class="form-inline search-box position-relative" autocomplete= "off" role="search" action="@Url.PackageList()" method="get">
     <div class="input-group w-100">
-        <input class="form-control" name="q" type="text" title="Search" placeholder="Search @if(pagePackages){<text>Packages</text>}" value="@(String.IsNullOrEmpty(ViewBag.SearchTerm) ? "" : ViewBag.SearchTerm)" autofocus>
+        <input class="form-control" name="q" type="text" title="Search" placeholder="Search Packages" value="@(String.IsNullOrEmpty(ViewBag.SearchTerm) ? "" : ViewBag.SearchTerm)" autofocus>
         <div class="input-group-append">
             <button class="btn btn-light" type="submit" title="Search" value="">
                 <span class="fas fa-search" alt="Search"></span>

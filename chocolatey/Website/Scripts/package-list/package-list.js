@@ -50,14 +50,3 @@ $(function () {
         $(".modal-closeable").css('display', 'block');
     }
 });
-
-// Documentation Search Results
-(function () {
-    var cx = '013536524443644524775:xv95wv156yw';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-})();
