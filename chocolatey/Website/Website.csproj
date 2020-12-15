@@ -1069,6 +1069,8 @@
     <Content Include="Content\Images\Badges\CreatingChocolateyPackages.png" />
     <Content Include="Content\Images\Badges\GettingStartedWithChocolatey.png" />
     <Content Include="Content\Images\Badges\InstallingUpgradingUninstalling.png" />
+    <Content Include="Content\Images\blog-screenshot-dark.jpg" />
+    <Content Include="Content\Images\blog-screenshot-light.jpg" />
     <Content Include="Content\Images\blog\1billion.png" />
     <Content Include="Content\Images\blog\CCM_API.gif" />
     <Content Include="Content\Images\blog\CCM_Deployments_Edit_MachineContactTimeout.jpg" />
@@ -1165,6 +1167,8 @@
     <Content Include="Content\Images\copy.png" />
     <Content Include="Content\Images\covid-response.png" />
     <Content Include="Content\Images\dep-graph.svg" />
+    <Content Include="Content\Images\docs-screenshot-dark.jpg" />
+    <Content Include="Content\Images\docs-screenshot-light.jpg" />
     <Content Include="Content\Images\docs\C4B-implementation-diagram.jpg" />
     <Content Include="Content\Images\docs\chocolateyicon.gif" />
     <Content Include="Content\Images\docs\chocolateyicon.png" />

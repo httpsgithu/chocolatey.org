@@ -25,67 +25,68 @@
 </div>
 @if (callout == true)
 {
-    <div class="bg-medium-dark bg-snowflake">
-        <div class="shape-border shape-border-top shape-border-primary d-none d-sm-block"></div>
-        <div class="container py-3">
-            <div class="d-md-flex align-items-md-center justify-content-md-center text-center">
-                <img class="img-fluid mr-3 d-none d-md-flex" width="100" src="@Url.Content("~/content/images/chocolatey-holiday-icon.svg")" />
-                <img class="img-fluid" width="250" src="@Url.Content("~/content/images/12-days-logo-light.svg")" />
-            </div>
-            <h5 class="countdown-date my-4 text-center">
-                <span class="mr-lg-4 mb-3 mb-lg-0 d-inline-block"><i class="fas fa-calendar"></i> December 1 - December 16</span>
-                <br class="d-lg-none" />
-                <span><i class="fas fa-clock"></i> Daily at 4-5 PM GMT / 8-9 AM PST / 10-11 AM CST / 11-12 AM EST</span>
-            </h5>
-            <p class="mx-auto text-sm-center" style="max-width: 720px;">
-                We'll have a live daily event for an hour - every weekday from Dec 1 - Dec 16. While registration is optional, it is strongly encouraged as we plan to have prizes and giveaways and other fun things.
-            </p>
-            <div class="text-center">
-                <a href="@Url.RouteUrl(RouteName.Events, new { eventName = "12-days-of-chocolatey" })" class="btn btn-success btn-lg"><span class="h2 font-weight-bold">Learn More<span class="fas fa-angle-right"></span></span></a>
+    <div class="bg-medium-dark">
+        <div class="shape-border shape-border-top shape-border-primary"></div>
+        <div class="container">
+            <div class="position-relative d-none d-sm-block my-5 mb-md-n5" style="z-index: 9;">
+                <div class="row text-dark">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card h-100" style="border-top: 3px solid #36bc98;">
+                            <div class="card-body d-flex flex-column align-items-center text-center p-0">
+                                <div class="carousel carousel-fade slide" data-ride="carousel" data-interval="3000" style="height:auto;">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active d-inline-block">
+                                            <img class="d-block w-100" src="@Url.Content("~/content/images/docs-screenshot-light.jpg")" alt="Chocolatey Docs Light Mode" />
+                                        </div>
+                                        <div class="carousel-item d-inline-block">
+                                            <img class="d-block w-100" src="@Url.Content("~/content/images/docs-screenshot-dark.jpg")" alt="Chocolatey Docs Dark Mode" />
+                                        </div>
+                                        <div class="carousel-item d-inline-block">
+                                            <img class="d-block w-100" src="@Url.Content("~/content/images/blog-screenshot-light.jpg")" alt="Chocolatey Blog Light Mode" />
+                                        </div>
+                                        <div class="carousel-item d-inline-block">
+                                            <img class="d-block w-100" src="@Url.Content("~/content/images/blog-screenshot-dark.jpg")" alt="Chocolatey Blog Dark Mode" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3">
+                                    <h5><strong>New Docs and Blog</strong></h5>
+                                    <p>Our revamped documentation features advanced search optimizations, better organized articles, and Dark Mode!</p>
+                                    <a class="btn btn-link" href="https://blog.chocolatey.org/"><strong>Read the Blog</strong></a>
+                                    <a class="btn btn-link" href="https://docs.chocolatey.org/en-us/"><strong>Visit Docs</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card h-100" style="border-top: 3px solid #36bc98;">
+                            <div class="card-body d-flex flex-column align-items-center text-center p-0">
+                                <img class="img-fluid" src="@Url.Content("~/content/images/events/01-06.jpg")" alt="12 Days of Chocolatey" title="12 Days of Chocolatey">
+                                <div class="p-3">
+                                    <h5><strong>12 Days of Chocolatey</strong></h5>
+                                    <p>The 12 Days of Chocolatey livestream event may be over, but we've archived all the videos for you to watch again!</p>
+                                    <a class="btn btn-link" href="@Url.RouteUrl(RouteName.Events, new { eventName= "12-days-of-chocolatey" })#schedule"><strong>Watch On-Demand</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100" style="border-top: 3px solid #36bc98;">
+                            <div class="card-body d-flex flex-column align-items-center text-center p-0">
+                                <img class="img-fluid" src="@Url.Content("~/content/images/events/01-05.jpg")" alt="Chocolatey Central Managements Deployments Scheduling, Semi-Connected Environments, and API" title="Chocolatey Central Managements Deployments Scheduling, Semi-Connected Environments, and API">
+                                <div class="p-3">
+                                    <h5><strong>Chocolatey Central Management</strong></h5>
+                                    <p>Learn about Chocolatey Central Management Deployment schedules, semi-connected environments, and API.</p>
+                                    <a class="btn btn-link" href="https://chocolatey.zoom.us/webinar/register/3516056467398/WN__AtcpeIbQnGACco6PE2QbA" target="_blank" rel="noreferrer"><strong>Watch the Webinar</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="shape-border shape-border-bottom d-none d-sm-block"></div>
+        <div class="shape-border shape-border-bottom shape-border-white"></div>
     </div>
-    <section class="bg-light">
-        <div class="container-fluid py-3 py-sm-0 bg-light">
-            <div class="text-center">
-                <h4 class="mb-0">WEBINAR</h4>
-                <h1 class="font-weight-bold d-none d-sm-block">Chocolatey Central Managements<br />Deployments Scheduling, Semi-Connected Environments, and API</h1>
-                <h2 class="font-weight-bold d-sm-none">Chocolatey Central Managements Deployments Scheduling, Semi-Connected Environments, and API</h2>
-            </div>
-            <div class="row divider-row align-items-center my-4">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="d-flex align-items-center">
-                        <div class="mr-3 text-sm-right ml-sm-auto order-2">
-                            <h5 class="font-weight-bold text-primary mb-0">Gary Ewan Park</h5>
-                            <p class="mb-0"><strong>Senior Software Engineer at Chocolatey</strong></p>
-                        </div>
-                        <div class="order-1 order-sm-2 mr-3 mr-sm-0">
-                            <img class="rounded shadow" width="60" src="@Url.Content("~/content/images/speakers/gary-ewan-park.jpg")" alt="Gary Ewan Park" title="Gary Ewan Park" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="d-flex align-items-center">
-                        <div class="mr-3">
-                            <img class="rounded shadow" width="60" src="@Url.Content("~/content/images/speakers/joel-sallow-francis.jpg")" alt="Joel (Sallow) Francis" title="Joel (Sallow) Francis" />
-                        </div>
-                        <div>
-                            <h5 class="font-weight-bold text-primary mb-0">Joel (Sallow) Francis</h5>
-                            <p class="mb-0"><strong>Software Engineer at Chocolatey</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="mx-auto text-sm-center" style="max-width: 720px;">
-                Chocolatey Central Management's premiere feature of Deployments now can work with schedules, semi-connected environments, and CCM (Chocolatey Central Management) overall has a published API so you can accomplish more, much more. We are excited to share that with you!
-            </p>
-            <div class="text-center">
-                <a href="https://chocolatey.zoom.us/webinar/register/3516056467398/WN__AtcpeIbQnGACco6PE2QbA" target="_blank" rel="noreferrer" class="btn btn-success btn-lg mb-2"><span class="h2 font-weight-bold">Watch On-Demand</span></a>
-                <p class="mb-0"><a href="@Url.RouteUrl(RouteName.BlogArticle, new { articleName = "announcing-scheduling-api-semi-connected-environments" })">Read The Blog</a> | <a href="@Url.RouteUrl(RouteName.Events, new { eventName = "chocolatey-deployment-schedules" })">Learn More<span class="fas fa-angle-right"></span></a></p>
-            </div>
-        </div>
-    </section>
 }
 else
 {
@@ -114,12 +115,8 @@ else
     </section>
 }
 <section class="bg-white">
-    @if (callout == true)
-    {
-        <div class="shape-border shape-border-top shape-border-light d-none d-sm-block"></div>
-    }
-    <div class="container @if(callout == true){<text>py-3 pt-sm-5 pb-lg-5</text>}">
-        <div id="informationCarousel" class="carousel slide carousel-fade information-carousel" data-ride="carousel" data-touch="true">
+    <div class="container pt-md-3">
+        <div id="informationCarousel" class="carousel slide carousel-fade information-carousel" data-ride="carousel" data-touch="true" data-interval="12000">
             <ol class="carousel-indicators">
                 <li data-target="#informationCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#informationCarousel" data-slide-to="1"></li>
