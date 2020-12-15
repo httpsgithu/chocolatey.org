@@ -12,5 +12,5 @@ RegisterLink: https://forms.gle/vHeFyHXZwSSTkx2YA
 Tags: 2020, ccm, deployments, ansible self-service, chocolatey-fest
 Summary: We'll have a live daily event for an hour - every weekday from Dec 1 - Dec 16. While registration is optional, it is strongly encouraged as we plan to have prizes and giveaways and other fun things.
 IncludeRegisterPage: true
-IsOnDemand: false
+IsOnDemand: true
 ---

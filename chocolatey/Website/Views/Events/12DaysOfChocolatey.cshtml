@@ -45,8 +45,7 @@
                     <div class="col-lg-6">
                         <p>We'll have a live daily event for an hour - every weekday from Dec 1 - Dec 16. While registration is optional, it is strongly encouraged as we plan to have prizes and giveaways and other fun things.</p>
                         <div class="d-lg-none text-center">
-                            <h3>Join Us Live On</h3>
-                            @Html.Partial("~/Views/Shared/_LivestreamShare.cshtml")
+                            <a class="btn btn-link text-dark" href="https://www.youtube.com/playlist?list=PLGvGJzqY88slekBOxwDi865ydvRL8OEqF"><h3><i class="fab fa-youtube bg-youtube"></i> Watch the Replays on YouTube</h3></a>
                         </div>
                         <ul class="list-circle list-circle-success-fade list-circle-fa-check">
                             <li>Livestreamed on all your favorite platforms</li>
@@ -62,8 +61,7 @@
                     </div>
                     <div class="col-lg-6 d-none d-md-block">
                         <div class="d-none d-lg-block">
-                            <h3>Join Us Live On</h3>
-                            @Html.Partial("~/Views/Shared/_LivestreamShare.cshtml")
+                            <div class="text-center mb-3"><a class="btn btn-link text-dark" href="https://www.youtube.com/playlist?list=PLGvGJzqY88slekBOxwDi865ydvRL8OEqF"><h3><i class="fab fa-youtube bg-youtube"></i> Watch the Replays on YouTube</h3></a></div>
                         </div>
                         <div>
                             <h3 class="mb-4">Event Speakers</h3>
@@ -329,15 +327,7 @@
                                     Are you using Configuration Management platforms like Puppet, SCCM, or Intune? Good news! Chocolatey can integrate with all these tools as well!
                                     Come find out how.
                                 </p>
-                                <button class="btn btn-outline-success dropdown-toggle" type="button" id="addToCalendar9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="addToCalendar9">
-                                    <a class="dropdown-item" target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=12%20Days%20of%20Chocolatey%20-%20%22Chocolatey%20Integrations%20Discussion%20(including%20SCCM%20%26%20Intune)%22%20-%20Chocolatey%20Team&amp;dates=20201211T160000Z/20201211T170000Z&amp;details=Join%20the%20Chocolatey%20team%20for%20Day%209%20of%20The%2012%20Days%20of%20Chocolatey!%0A%0ATopic:%2012%20Days%20of%20Chocolatey%20-%20%22Chocolatey%20Integrations%20Discussion%20(including%20SCCM%20%26%20Intune)%22%20-%20Chocolatey%20Team%0A%0AJoin%20Chocolatey%20live%20on:%0ATwitch:%20https://www.twitch.tv/chocolateysoftware%0AYouTube:%20https://www.youtube.com/chocolateysoftware%0ATwitter:%20https://twitter.com/chocolateynuget%0AFacebook:%20https://www.facebook.com/ChocolateySoftware&amp;location=Livestream%20-%20See%20description%20for%20links&amp;sprop=&amp;sprop=name:">Google Calendar</a>
-                                    <a class="dropdown-item" target="_blank" href="http://calendar.yahoo.com/?v=60&amp;view=d&amp;type=20&amp;title=12%20Days%20of%20Chocolatey%20-%20%22Chocolatey%20Integrations%20Discussion%20(including%20SCCM%20%26%20Intune)%22%20-%20Chocolatey%20Team&amp;st=20201211T100000Z&amp;dur=0100&amp;desc=Join%20the%20Chocolatey%20team%20for%20Day%209%20of%20The%2012%20Days%20of%20Chocolatey!%0A%0ATopic:%2012%20Days%20of%20Chocolatey%20-%20%22Chocolatey%20Integrations%20Discussion%20(including%20SCCM%20%26%20Intune)%22%20-%20Chocolatey%20Team%0A%0AJoin%20Chocolatey%20live%20on:%0ATwitch:%20https://www.twitch.tv/chocolateysoftware%0AYouTube:%20https://www.youtube.com/chocolateysoftware%0ATwitter:%20https://twitter.com/chocolateynuget%0AFacebook:%20https://www.facebook.com/ChocolateySoftware&amp;in_loc=Livestream%20-%20See%20description%20for%20links">Yahoo Calendar</a>
-                                    <a class="dropdown-item" href="@Url.Content("~/content/calendars/12DaysOfChocolatey-11December2020.ics")" download>iCal Calendar</a>
-                                    <a class="dropdown-item" href="@Url.Content("~/content/calendars/12DaysOfChocolatey-11December2020.ics")" download>Outlook Calendar</a>
-                                </div>
+                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/f8meI_S9nKo?t=460"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
                             </div>
                         </div>
                         <hr class="my-4" />
@@ -357,15 +347,7 @@
                                     <br class="d-md-none" />
                                     <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Paul Broadwith</span>
                                 </p>
-                                <button class="btn btn-outline-success dropdown-toggle mt-3" type="button" id="addToCalendar10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="addToCalendar10">
-                                    <a class="dropdown-item" target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=12%20Days%20of%20Chocolatey%20-%20%22Exploring%20Self-Service%20Anywhere%22%20-%20Paul%20Broadwith&amp;dates=20201214T160000Z/20201214T170000Z&amp;details=Join%20the%20Chocolatey%20team%20for%20Day%2010%20of%20The%2012%20Days%20of%20Chocolatey!%0A%0ATopic:%2012%20Days%20of%20Chocolatey%20-%20%22Exploring%20Self-Service%20Anywhere%22%20-%20Paul%20Broadwith%0A%0AJoin%20Chocolatey%20live%20on:%0ATwitch:%20https://www.twitch.tv/chocolateysoftware%0AYouTube:%20https://www.youtube.com/chocolateysoftware%0ATwitter:%20https://twitter.com/chocolateynuget%0AFacebook:%20https://www.facebook.com/ChocolateySoftware&amp;location=Livestream%20-%20See%20description%20for%20links&amp;sprop=&amp;sprop=name:">Google Calendar</a>
-                                    <a class="dropdown-item" target="_blank" href="http://calendar.yahoo.com/?v=60&amp;view=d&amp;type=20&amp;title=12%20Days%20of%20Chocolatey%20-%20%22Exploring%20Self-Service%20Anywhere%22%20-%20Paul%20Broadwith&amp;st=20201214T100000Z&amp;dur=0100&amp;desc=Join%20the%20Chocolatey%20team%20for%20Day%2010%20of%20The%2012%20Days%20of%20Chocolatey!%0A%0ATopic:%2012%20Days%20of%20Chocolatey%20-%20%22Exploring%20Self-Service%20Anywhere%22%20-%20Paul%20Broadwith%0A%0AJoin%20Chocolatey%20live%20on:%0ATwitch:%20https://www.twitch.tv/chocolateysoftware%0AYouTube:%20https://www.youtube.com/chocolateysoftware%0ATwitter:%20https://twitter.com/chocolateynuget%0AFacebook:%20https://www.facebook.com/ChocolateySoftware&amp;in_loc=Livestream%20-%20See%20description%20for%20links">Yahoo Calendar</a>
-                                    <a class="dropdown-item" href="@Url.Content("~/content/calendars/12DaysOfChocolatey-14December2020.ics")" download>iCal Calendar</a>
-                                    <a class="dropdown-item" href="@Url.Content("~/content/calendars/12DaysOfChocolatey-14December2020.ics")" download>Outlook Calendar</a>
-                                </div>
+                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/K7rZGe8eAZ4?t=456"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
                             </div>
                         </div>
                         <hr class="my-4" />
@@ -385,15 +367,7 @@
                                     <br class="d-md-none" />
                                     <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Rob Reynolds, Stephen Valdinger</span>
                                 </p>
-                                <button class="btn btn-outline-success dropdown-toggle mt-3" type="button" id="addToCalendar11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="addToCalendar11">
-                                    <a class="dropdown-item" target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=12%20Days%20of%20Chocolatey%20-%20%22Will%20be%20announced%20soon%20(and%20will%20be%20exciting!)%22%20-%20Rob%20Reynolds,%20Stephen%20Valdinger&amp;dates=20201215T160000Z/20201215T170000Z&amp;details=Join%20the%20Chocolatey%20team%20for%20Day%2011%20of%20The%2012%20Days%20of%20Chocolatey!%0A%0ATopic:%2012%20Days%20of%20Chocolatey%20-%20%22Will%20be%20announced%20soon%20(and%20will%20be%20exciting!)%22%20-%20Rob%20Reynolds,%20Stephen%20Valdinger%0A%0AJoin%20Chocolatey%20live%20on:%0ATwitch:%20https://www.twitch.tv/chocolateysoftware%0AYouTube:%20https://www.youtube.com/chocolateysoftware%0ATwitter:%20https://twitter.com/chocolateynuget%0AFacebook:%20https://www.facebook.com/ChocolateySoftware&amp;location=Livestream%20-%20See%20description%20for%20links&amp;sprop=&amp;sprop=name:">Google Calendar</a>
-                                    <a class="dropdown-item" target="_blank" href="http://calendar.yahoo.com/?v=60&amp;view=d&amp;type=20&amp;title=12%20Days%20of%20Chocolatey%20-%20%22Will%20be%20announced%20soon%20(and%20will%20be%20exciting!)%22%20-%20Rob%20Reynolds,%20Stephen%20Valdinger&amp;st=20201215T100000Z&amp;dur=0100&amp;desc=Join%20the%20Chocolatey%20team%20for%20Day%2011%20of%20The%2012%20Days%20of%20Chocolatey!%0A%0ATopic:%2012%20Days%20of%20Chocolatey%20-%20%22Will%20be%20announced%20soon%20(and%20will%20be%20exciting!)%22%20-%20Rob%20Reynolds,%20Stephen%20Valdinger%0A%0AJoin%20Chocolatey%20live%20on:%0ATwitch:%20https://www.twitch.tv/chocolateysoftware%0AYouTube:%20https://www.youtube.com/chocolateysoftware%0ATwitter:%20https://twitter.com/chocolateynuget%0AFacebook:%20https://www.facebook.com/ChocolateySoftware&amp;in_loc=Livestream%20-%20See%20description%20for%20links">Yahoo Calendar</a>
-                                    <a class="dropdown-item" href="@Url.Content("~/content/calendars/12DaysOfChocolatey-15December2020.ics")" download>iCal Calendar</a>
-                                    <a class="dropdown-item" href="@Url.Content("~/content/calendars/12DaysOfChocolatey-15December2020.ics")" download>Outlook Calendar</a>
-                                </div>
+                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/GptoSl8B90Y?t=466"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
                             </div>
                         </div>
                         <hr class="my-4" />
@@ -416,15 +390,7 @@
                                 <p>
                                     We’ll take live questions from the Chocolatey Community here, to be submitted via the chat. If we have time, we’ll cover some common questions posed by Organizations we’ve helped.
                                 </p>
-                                <button class="btn btn-outline-success dropdown-toggle" type="button" id="addToCalendar12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="addToCalendar12">
-                                    <a class="dropdown-item" target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=12%20Days%20of%20Chocolatey%20-%20%22Exciting%20Developments%20to%20Share%22%20-%20Rob%20Reynolds,%20Stephen%20Valdinger&amp;dates=20201215T160000Z/20201215T170000Z&amp;details=Join%20the%20Chocolatey%20team%20for%20Day%2011%20of%20The%2012%20Days%20of%20Chocolatey!%0A%0ATopic:%2012%20Days%20of%20Chocolatey%20-%20%22Exciting%20Developments%20to%20Share%22%20-%20Rob%20Reynolds,%20Stephen%20Valdinger%0A%0AJoin%20Chocolatey%20live%20on:%0ATwitch:%20https://www.twitch.tv/chocolateysoftware%0AYouTube:%20https://www.youtube.com/chocolateysoftware%0ATwitter:%20https://twitter.com/chocolateynuget%0AFacebook:%20https://www.facebook.com/ChocolateySoftware&amp;location=Livestream%20-%20See%20description%20for%20links&amp;sprop=&amp;sprop=name:">Google Calendar</a>
-                                    <a class="dropdown-item" target="_blank" href="http://calendar.yahoo.com/?v=60&amp;view=d&amp;type=20&amp;title=12%20Days%20of%20Chocolatey%20-%20%22Exciting%20Developments%20to%20Share%22%20-%20Rob%20Reynolds,%20Stephen%20Valdinger&amp;st=20201215T100000Z&amp;dur=0100&amp;desc=Join%20the%20Chocolatey%20team%20for%20Day%2011%20of%20The%2012%20Days%20of%20Chocolatey!%0A%0ATopic:%2012%20Days%20of%20Chocolatey%20-%20%22Exciting%20Developments%20to%20Share%22%20-%20Rob%20Reynolds,%20Stephen%20Valdinger%0A%0AJoin%20Chocolatey%20live%20on:%0ATwitch:%20https://www.twitch.tv/chocolateysoftware%0AYouTube:%20https://www.youtube.com/chocolateysoftware%0ATwitter:%20https://twitter.com/chocolateynuget%0AFacebook:%20https://www.facebook.com/ChocolateySoftware&amp;in_loc=Livestream%20-%20See%20description%20for%20links">Yahoo Calendar</a>
-                                    <a class="dropdown-item" href="@Url.Content("~/content/calendars/12DaysOfChocolatey-16December2020.ics")" download>iCal Calendar</a>
-                                    <a class="dropdown-item" href="@Url.Content("~/content/calendars/12DaysOfChocolatey-16December2020.ics")" download>Outlook Calendar</a>
-                                </div>
+                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/ren6uzV5ZHc?t=434"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
                             </div>
                         </div>
                     </div>
