@@ -170,10 +170,13 @@
                                         {
                                             <a href="@Url.RouteUrl(RouteName.Events, new { eventName = post.UrlPath })" class="btn btn-outline-primary">Learn More</a>
                                         }
-                                        <a href="@post.RegisterLink" class="btn btn-primary" target="_blank" rel="nofollow">Watch Now</a>
+                                        if (post.Title != "12 Days of Chocolatey")
+                                        {
+                                            <a href="@post.RegisterLink" class="btn btn-primary" target="_blank" rel="nofollow">Watch Now</a>
+                                        }
                                     }
                                     else
-                                    { 
+                                    {
                                         <p class="font-weight-bold">Replay Coming Soon!</p>
                                     }
                                 </div>
