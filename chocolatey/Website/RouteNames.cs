@@ -47,8 +47,6 @@ namespace NuGetGallery
         public const string HowChocolateyWorks = "HowChocolateyWorks";
         public const string Careers = "Careers";
         public const string FAQ = "FAQ";
-        public const string BlogHome = "BlogHome";
-        public const string BlogArticle = "BlogArticle";
         public const string Resources = "Resources";
         public const string ResourceName = "ResourceName";
         public const string Courses = "Courses";

@@ -302,18 +302,6 @@ namespace NuGetGallery
                 );
 
             routes.MapRouteSeo(
-                RouteName.BlogHome,
-                "blog/",
-                new { controller = "Blog", action = "Index" }
-                );
-
-            routes.MapRouteSeo(
-                RouteName.BlogArticle,
-                "blog/{articleName}",
-                new { controller = "Blog", action = "Article" }
-                );
-
-            routes.MapRouteSeo(
                 RouteName.Resources,
                 "resources/{resourceType}",
                 new { controller = "Resource", action = "Resources", resourceType = "home" }
@@ -356,20 +344,6 @@ namespace NuGetGallery
             routes.Redirect(r => r.MapRoute(RouteName.CurrentWebinar, "webinar")).To(eventsRoute, new { eventName = "chocolatey-deployments" });
 
             routes.MapRoute(RouteName.Stats, "stats", MVC.Pages.Stats());
-
-            routes.MapRoute(
-                "rss feed", "feed.rss", new
-                {
-                    controller = "RSS",
-                    Action = "feed.rss"
-                });
-
-            routes.MapRoute(
-            "blog rss feed", "blog.rss", new
-            {
-                controller = "Blog",
-                Action = "blog.rss"
-            });
 
             routes.Add(new JsonRoute("json/{controller}"));
 
