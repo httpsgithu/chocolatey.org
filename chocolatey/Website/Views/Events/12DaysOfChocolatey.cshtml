@@ -43,26 +43,23 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <p>We'll have a live daily event for an hour - every weekday from Dec 1 - Dec 16. While registration is optional, it is strongly encouraged as we plan to have prizes and giveaways and other fun things.</p>
+                        <p>
+                            Follow along with this <a href="#schedule">video series</a> to relive the 12 Days of Chocolatey livestream event (aka Chocolatey Fest 2020)!
+                            You'll learn about the Quick Deployment Environment (QDE), the Choco CCM Module, Self-Service Anywhere, and hear many other
+                            exciting new announcements from the Chocolatey team!
+                        </p>
                         <div class="d-lg-none text-center">
                             <a class="btn btn-link text-dark" href="https://www.youtube.com/playlist?list=PLGvGJzqY88slekBOxwDi865ydvRL8OEqF"><h3><i class="fab fa-youtube bg-youtube"></i> Watch the Replays on YouTube</h3></a>
                         </div>
                         <ul class="list-circle list-circle-success-fade list-circle-fa-check">
-                            <li>Livestreamed on all your favorite platforms</li>
-                            <li>One hour each day <a href="#schedule" rel="nofollow">(see schedule below)</a></li>
                             <li>Chocolatey Central Management Deployments</li>
                             <li>Chocolatey &amp; Ansible</li>
                             <li>Building Packages</li>
                             <li>Self-Service Anywhere</li>
                             <li>NEW exciting Chocolatey announcements</li>
                         </ul>
-                        <p>Can't attend live? We'll try to record for later, but you'll miss out on being able to contribute and shape the discussions during the livestream sessions! Plus you'll miss out on giveaways!</p>
-                        <div class="text-center d-md-none"><a href="@post.RegisterLink" target="_blank" rel="noreferrer" class="btn btn-lg btn-success btn-not-on-demand">Reserve My Spot Now</a></div>
                     </div>
                     <div class="col-lg-6 d-none d-md-block">
-                        <div class="d-none d-lg-block">
-                            <div class="text-center mb-3"><a class="btn btn-link text-dark" href="https://www.youtube.com/playlist?list=PLGvGJzqY88slekBOxwDi865ydvRL8OEqF"><h3><i class="fab fa-youtube bg-youtube"></i> Watch the Replays on YouTube</h3></a></div>
-                        </div>
                         <div>
                             <h3 class="mb-4">Event Speakers</h3>
                             <div class="row text-center">
@@ -112,290 +109,291 @@
             <div class="container">
                 <div class="mb-4 d-flex">
                     <div><img class="mr-1 img-berry" src="@Url.Content("~/content/images/holly.svg")" alt="Holiday Holly" /></div>
-                    <h1 class="mb-0">Daily Event Schedule</h1>
+                    <h1 class="mb-0">Event Replay Archive</h1>
                 </div>
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <div class="text-center mb-3"><a class="btn btn-link text-dark" href="https://www.youtube.com/playlist?list=PLGvGJzqY88slekBOxwDi865ydvRL8OEqF"><h3><i class="fab fa-youtube bg-youtube"></i> Watch the Replays on YouTube</h3></a></div>
-                        <div class="d-flex flex-row mb-3">
-                            <input class="countdown-date-time" type="hidden" value="2020/12/01 16:00:00 UTC" />
-                            <div>
-                                <div class="calendar-date calendar-date-sm mr-3">
-                                    <div>December</div>
-                                    <div>1</div>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5>Keynote - "The Power of Simple"</h5>
-                                <p>
-                                    <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
-                                    <br class="d-md-none" />
-                                    <span><i class="fas fa-microphone text-secondary mr-1"></i>Speaker: Rob Reynolds</span>
-                                </p>
-                                <p>
-                                    Join us as Rob talks about the elegance and power of simple to kick off the 12 Days of Chocolatey.
-                                    This session may feel a bit more formal than the other days. We'll be making at least one exciting announcement at the end!
-                                </p>
-                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/AdFZM4vn2GA?t=293"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
-                            </div>
+                <div class="mb-3">
+                    <input class="countdown-date-time" type="hidden" value="2020/12/01 16:00:00 UTC" />
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3 mb-md-0">
+                            <a href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "the-power-of-simple"})" title='Keynote - "The Power of Simple"'>
+                                <img class="img-fluid shadow" src="@Url.Content("~/content/images/videos/004-01.jpg")" alt='Keynote - "The Power of Simple"' title='Keynote - "The Power of Simple"' />
+                            </a>
                         </div>
-                        <hr class="my-4" />
-
-                        <div class="d-flex flex-row mb-3">
-                            <input class="countdown-date-time" type="hidden" value="2020/12/02 16:00:00 UTC" />
-                            <div>
-                                <div class="calendar-date calendar-date-sm mr-3">
-                                    <div>December</div>
-                                    <div>2</div>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5>Redefining Chocolatey</h5>
-                                <p>
-                                    <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
-                                    <br class="d-md-none" />
-                                    <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Rob Reynolds, Adil Leghari</span>
-                                </p>
-                                <p>
-                                    You likely have a picture in your mind of what Chocolatey is to you. Come prepared to have your mind blown.
-                                </p>
-                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/bxG4cqrg-iI?t=450"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
-                            </div>
-                        </div>
-                        <hr class="my-4" />
-
-                        <div class="d-flex flex-row mb-3">
-                            <input class="countdown-date-time" type="hidden" value="2020/12/03 16:00:00 UTC" />
-                            <div>
-                                <div class="calendar-date calendar-date-sm mr-3">
-                                    <div>December</div>
-                                    <div>3</div>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5>Chocolatey Central Managements Deployments Scheduling, Semi-Connected Environments, and API</h5>
-                                <p>
-                                    <span class="badge badge-pill text-right text-capitalize badge-success d-inline-block mb-2 mb-md-0 mr-md-3">Webinar</span>
-                                    <br class="d-md-none" />
-                                    <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Gary Ewan Park, Joel (Sallow) Francis</span>
-                                </p>
-                                <p>
-                                    Chocolatey Central Management's premiere feature of Deployments now can work with schedules, semi-connected environments, and CCM (Chocolatey Central Management) overall has a published API so you can accomplish more, much more.
-                                    <strong> Separate Registration Required!</strong>
-                                </p>
-                                <a class="btn btn-outline-success btn-on-demand" target="_blank" href="https://chocolatey.zoom.us/webinar/register/6516058272049/WN__AtcpeIbQnGACco6PE2QbA">Register Now</a>
-                            </div>
-                        </div>
-                        <hr class="my-4" />
-
-                        <div class="d-flex flex-row mb-3">
-                            <input class="countdown-date-time" type="hidden" value="2020/12/04 16:00:00 UTC" />
-                            <div>
-                                <div class="calendar-date calendar-date-sm mr-3">
-                                    <div>December</div>
-                                    <div>4</div>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5>Chocolatey in the Organization</h5>
-                                <p>
-                                    <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
-                                    <br class="d-md-none" />
-                                    <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Gary Ewan Park</span>
-                                </p>
-                                <p>
-                                    Come discover the best practices for setting up and configuring Chocolatey in an Organization. We’ll show you how to better leverage the Chocolatey Community Repository for packages updates,
-                                    as well as take advantage of the new functionality offered in Chocolatey for Business.
-                                </p>
-                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/3itZw3PSmmw?t=467"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
-                            </div>
-                        </div>
-                        <hr class="my-4" />
-
-                        <div class="d-flex flex-row mb-3">
-                            <input class="countdown-date-time" type="hidden" value="2020/12/07 16:00:00 UTC" />
-                            <div>
-                                <div class="calendar-date calendar-date-sm mr-3">
-                                    <div>December</div>
-                                    <div>7</div>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5>Building Packages (Open Source and C4B)</h5>
-                                <p>
-                                    <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
-                                    <br class="d-md-none" />
-                                    <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Adil Leghari, Stephen Valdinger</span>
-                                </p>
-                                <p>
-                                    Building Chocolatey packages from scratch can take time and effort. We’ll show you some tips and tricks to help get you started,
-                                    and then show off the “Easy Button” with Package Builder (a Chocolatey for Business feature).
-                                </p>
-                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/9r-IIU1fD8U?t=469"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
-                            </div>
-                        </div>
-                        <hr class="my-4" />
-
-                        <div class="d-flex flex-row mb-3">
-                            <input class="countdown-date-time" type="hidden" value="2020/12/08 16:00:00 UTC" />
-                            <div>
-                                <div class="calendar-date calendar-date-sm mr-3">
-                                    <div>December</div>
-                                    <div>8</div>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5>Exploring Quick Deployment Environment (QDE) & Offline / Internal Environments</h5>
-                                <p>
-                                    <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
-                                    <br class="d-md-none" />
-                                    <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Stephen Valdinger</span>
-                                </p>
-                                <p>
-                                    This appliance allows you to have all the infrastructure required to use Chocolatey successfully in an organization,
-                                    in 1 stream-lined appliance! We’ll go over what’s on the box, and how to set it up and get started.
-                                </p>
-                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/A0vMIDZ8dYc?t=468"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
-                            </div>
-                        </div>
-                        <hr class="my-4" />
-
-                        <div class="d-flex flex-row mb-3">
-                            <input class="countdown-date-time" type="hidden" value="2020/12/09 16:00:00 UTC" />
-                            <div>
-                                <div class="calendar-date calendar-date-sm mr-3">
-                                    <div>December</div>
-                                    <div>9</div>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5 class="text-break">Choco CCM Module (Deployments / Integrations / Reporting)</h5>
-                                <p>
-                                    <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
-                                    <br class="d-md-none" />
-                                    <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Stephen Valdinger, Joel (Sallow) Francis</span>
-                                </p>
-                                <p>
-                                    PowerShell loves APIs, and so do we! So we wrote a PowerShell module to interact with the API behind Central Management.
-                                    We’ll show off some of the cool things you can do with it in this session.
-                                </p>
-                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/rU4tVFwsD14?t=468"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
-                            </div>
-                        </div>
-                        <hr class="my-4" />
-
-                        <div class="d-flex flex-row mb-3">
-                            <input class="countdown-date-time" type="hidden" value="2020/12/10 16:00:00 UTC" />
-                            <div>
-                                <div class="calendar-date calendar-date-sm mr-3">
-                                    <div>December</div>
-                                    <div>10</div>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5>Accelerate Automation of Windows with Ansible + Chocolatey</h5>
-                                <p>
-                                    <span class="badge badge-pill text-right text-capitalize badge-success d-inline-block mb-2 mb-md-0 mr-md-3">Webinar</span>
-                                    <br class="d-md-none" />
-                                    <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Adil Leghari, Paul Broadwith, George James</span>
-                                </p>
-                                <p>
-                                    Together, Ansible and Chocolatey bring faster and more secure deployments to your Windows environments. Use Chocolatey for software/package management and Ansible to automate and guarantee the desired state of your Windows infrastructure,
-                                    allowing your team to securely deploy applications faster than ever. <strong>Separate Registration Required!</strong>
-                                </p>
-                                <a class="btn btn-outline-success btn-on-demand" target="_blank" href="https://chocolatey.zoom.us/webinar/register/9116058944622/WN_4sBxu-fqRRSL3-fglGqclQ">Register Now</a>
-                            </div>
-                        </div>
-                        <hr class="my-4" />
-
-                        <div class="d-flex flex-row mb-3">
-                            <input class="countdown-date-time" type="hidden" value="2020/12/11 16:00:00 UTC" />
-                            <div>
-                                <div class="calendar-date calendar-date-sm mr-3">
-                                    <div>December</div>
-                                    <div>11</div>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5>Chocolatey Integrations Discussion (including SCCM & Intune)</h5>
-                                <p>
-                                    <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
-                                    <br class="d-md-none" />
-                                    <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Chocolatey Team</span>
-                                </p>
-                                <p>
-                                    Are you using Configuration Management platforms like Puppet, SCCM, or Intune? Good news! Chocolatey can integrate with all these tools as well!
-                                    Come find out how.
-                                </p>
-                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/f8meI_S9nKo?t=460"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
-                            </div>
-                        </div>
-                        <hr class="my-4" />
-
-                        <div class="d-flex flex-row mb-3">
-                            <input class="countdown-date-time" type="hidden" value="2020/12/14 16:00:00 UTC" />
-                            <div>
-                                <div class="calendar-date calendar-date-sm mr-3">
-                                    <div>December</div>
-                                    <div>14</div>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5>Exploring Self-Service Anywhere</h5>
-                                <p class="mb-0">
-                                    <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
-                                    <br class="d-md-none" />
-                                    <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Paul Broadwith</span>
-                                </p>
-                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/K7rZGe8eAZ4?t=456"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
-                            </div>
-                        </div>
-                        <hr class="my-4" />
-
-                        <div class="d-flex flex-row mb-3">
-                            <input class="countdown-date-time" type="hidden" value="2020/12/15 16:00:00 UTC" />
-                            <div>
-                                <div class="calendar-date calendar-date-sm mr-3">
-                                    <div>December</div>
-                                    <div>15</div>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5>Will be announced soon (and will be exciting!)</h5>
-                                <p class="mb-0">
-                                    <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
-                                    <br class="d-md-none" />
-                                    <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Rob Reynolds, Stephen Valdinger</span>
-                                </p>
-                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/GptoSl8B90Y?t=466"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
-                            </div>
-                        </div>
-                        <hr class="my-4" />
-
-                        <div class="d-flex flex-row mb-3">
-                            <input class="countdown-date-time" type="hidden" value="2020/12/16 16:00:00 UTC" />
-                            <div>
-                                <div class="calendar-date calendar-date-sm mr-3">
-                                    <div>December</div>
-                                    <div>16</div>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5>Q&A Panel Session & Wrap</h5>
-                                <p>
-                                    <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
-                                    <br class="d-md-none" />
-                                    <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Chocolatey Team</span>
-                                </p>
-                                <p>
-                                    We’ll take live questions from the Chocolatey Community here, to be submitted via the chat. If we have time, we’ll cover some common questions posed by Organizations we’ve helped.
-                                </p>
-                                <a class="btn btn-link text-dark font-weight-bold btn-replay" target="_blank" href="https://youtu.be/ren6uzV5ZHc?t=434"><i class="fab fa-youtube bg-youtube"></i> Watch the Replay</a>
-                            </div>
+                        <div class="col-md-9">
+                            <h5>Keynote - "The Power of Simple"</h5>
+                            <p>
+                                <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
+                                <br class="d-md-none" />
+                                <span><i class="fas fa-microphone text-secondary mr-1"></i>Speaker: Rob Reynolds</span>
+                            </p>
+                            <p>
+                                Join us as Rob talks about the elegance and power of simple to kick off the 12 Days of Chocolatey.
+                                This session may feel a bit more formal than the other days. We'll be making at least one exciting announcement at the end!
+                            </p>
+                            <a class="btn btn-outline-success btn-replay" href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "the-power-of-simple"})" title='Keynote - "The Power of Simple"'>Watch On-Demand Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="text-center d-md-none"><a href="@post.RegisterLink" target="_blank" rel="noreferrer" class="btn btn-lg btn-success btn-not-on-demand mt-3">Reserve My Spot Now</a></div>
+                <hr class="my-4" />
+                <div class="mb-3">
+                    <input class="countdown-date-time" type="hidden" value="2020/12/02 16:00:00 UTC" />
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3 mb-md-0">
+                            <a href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "redefining-chocolatey"})" title="Redifining Chocolatey">
+                                <img class="img-fluid shadow" src="@Url.Content("~/content/images/videos/004-02.jpg")" alt="Redefining Chocolatey" title="Redefining Chocolatey" />
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <h5>Redefining Chocolatey</h5>
+                            <p>
+                                <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
+                                <br class="d-md-none" />
+                                <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Rob Reynolds, Adil Leghari</span>
+                            </p>
+                            <p>
+                                You likely have a picture in your mind of what Chocolatey is to you. Come prepared to have your mind blown.
+                            </p>
+                            <a class="btn btn-outline-success btn-replay" href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "redefining-chocolatey"})" title="Redifining Chocolatey">Watch On-Demand Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <div class="mb-3">
+                    <input class="countdown-date-time" type="hidden" value="2020/12/03 16:00:00 UTC" />
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3 mb-md-0">
+                            <a target="_blank" href="https://chocolatey.zoom.us/webinar/register/6516058272049/WN__AtcpeIbQnGACco6PE2QbA" title="Chocolatey Central Managements Deployments Scheduling, Semi-Connected Environments, and API">
+                                <img class="img-fluid shadow" src="@Url.Content("~/content/images/events/01-05.jpg")" alt="Chocolatey Central Managements Deployments Scheduling, Semi-Connected Environments, and API" title="Chocolatey Central Managements Deployments Scheduling, Semi-Connected Environments, and API" />
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <h5>Chocolatey Central Managements Deployments Scheduling, Semi-Connected Environments, and API</h5>
+                            <p>
+                                <span class="badge badge-pill text-right text-capitalize badge-success d-inline-block mb-2 mb-md-0 mr-md-3">Webinar</span>
+                                <br class="d-md-none" />
+                                <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Gary Ewan Park, Joel (Sallow) Francis</span>
+                            </p>
+                            <p>
+                                Chocolatey Central Management's premiere feature of Deployments now can work with schedules, semi-connected environments, and CCM (Chocolatey Central Management) overall has a published API so you can accomplish more, much more.
+                                <strong> Separate Registration Required!</strong>
+                            </p>
+                            <a class="btn btn-outline-success btn-on-demand" target="_blank" href="https://chocolatey.zoom.us/webinar/register/6516058272049/WN__AtcpeIbQnGACco6PE2QbA">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <div class="mb-3">
+                    <input class="countdown-date-time" type="hidden" value="2020/12/04 16:00:00 UTC" />
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3 mb-md-0">
+                            <a href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "chocolatey-in-the-organization"})" title="Chocolatey in the Organization">
+                                <img class="img-fluid shadow" src="@Url.Content("~/content/images/videos/004-04.jpg")" alt="Chocolatey in the Organization" title="Chocolatey in the Organization" />
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <h5>Chocolatey in the Organization</h5>
+                            <p>
+                                <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
+                                <br class="d-md-none" />
+                                <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Gary Ewan Park</span>
+                            </p>
+                            <p>
+                                Come discover the best practices for setting up and configuring Chocolatey in an Organization. We’ll show you how to better leverage the Chocolatey Community Repository for packages updates,
+                                as well as take advantage of the new functionality offered in Chocolatey for Business.
+                            </p>
+                            <a class="btn btn-outline-success btn-replay" href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "chocolatey-in-the-organization"})" title="Chocolatey in the Organization">Watch On-Demand Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <div class="mb-3">
+                    <input class="countdown-date-time" type="hidden" value="2020/12/07 16:00:00 UTC" />
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3 mb-md-0">
+                            <a href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "building-packages"})" title="Building Packages (Open Source and C4B)">
+                                <img class="img-fluid shadow" src="@Url.Content("~/content/images/videos/004-05.jpg")" alt="Building Packages (Open Source and C4B)" title="Building Packages (Open Source and C4B)" />
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <h5>Building Packages (Open Source and C4B)</h5>
+                            <p>
+                                <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
+                                <br class="d-md-none" />
+                                <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Adil Leghari, Stephen Valdinger</span>
+                            </p>
+                            <p>
+                                Building Chocolatey packages from scratch can take time and effort. We’ll show you some tips and tricks to help get you started,
+                                and then show off the “Easy Button” with Package Builder (a Chocolatey for Business feature).
+                            </p>
+                            <a class="btn btn-outline-success btn-replay" href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "building-packages"})" title="Building Packages (Open Source and C4B)">Watch On-Demand Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <div class="mb-3">
+                    <input class="countdown-date-time" type="hidden" value="2020/12/08 16:00:00 UTC" />
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3 mb-md-0">
+                            <a href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "exploring-quick-deployment-environment-and-offline-internal-environments"})" title="Exploring Quick Deployment Environment (QDE) & Offline / Internal Environments">
+                                <img class="img-fluid shadow" src="@Url.Content("~/content/images/videos/004-06.jpg")" alt="Building Packages (Open Source and C4B)" title="Exploring Quick Deployment Environment (QDE) & Offline / Internal Environments)" />
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <h5>Exploring Quick Deployment Environment (QDE) & Offline / Internal Environments</h5>
+                            <p>
+                                <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
+                                <br class="d-md-none" />
+                                <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Stephen Valdinger</span>
+                            </p>
+                            <p>
+                                This appliance allows you to have all the infrastructure required to use Chocolatey successfully in an organization,
+                                in 1 stream-lined appliance! We’ll go over what’s on the box, and how to set it up and get started.
+                            </p>
+                            <a class="btn btn-outline-success btn-replay" href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "exploring-quick-deployment-environment-and-offline-internal-environments"})" title="Exploring Quick Deployment Environment (QDE) & Offline / Internal Environments">Watch On-Demand Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <div class="mb-3">
+                    <input class="countdown-date-time" type="hidden" value="2020/12/09 16:00:00 UTC" />
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3 mb-md-0">
+                            <a href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "choco-ccm-module"})" title="Choco CCM Module (Deployments / Integrations / Reporting)">
+                                <img class="img-fluid shadow" src="@Url.Content("~/content/images/videos/004-07.jpg")" alt="Choco CCM Module (Deployments / Integrations / Reporting)" title="Choco CCM Module (Deployments / Integrations / Reporting)" />
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <h5 class="text-break">Choco CCM Module (Deployments / Integrations / Reporting)</h5>
+                            <p>
+                                <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
+                                <br class="d-md-none" />
+                                <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Stephen Valdinger, Joel (Sallow) Francis</span>
+                            </p>
+                            <p>
+                                PowerShell loves APIs, and so do we! So we wrote a PowerShell module to interact with the API behind Central Management.
+                                We’ll show off some of the cool things you can do with it in this session.
+                            </p>
+                            <a class="btn btn-outline-success btn-replay" href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "choco-ccm-module"})" title="Choco CCM Module (Deployments / Integrations / Reporting)">Watch On-Demand Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <div class="mb-3">
+                    <input class="countdown-date-time" type="hidden" value="2020/12/10 16:00:00 UTC" />
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3 mb-md-0">
+                            <a target="_blank" href="https://chocolatey.zoom.us/webinar/register/9116058944622/WN_4sBxu-fqRRSL3-fglGqclQ" title="Accelerate Automation of Windows with Ansible + Chocolatey">
+                                <img class="img-fluid shadow" src="@Url.Content("~/content/images/events/01-07.jpg")" alt="Accelerate Automation of Windows with Ansible + Chocolatey" title="Accelerate Automation of Windows with Ansible + Chocolatey" />
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <h5>Accelerate Automation of Windows with Ansible + Chocolatey</h5>
+                            <p>
+                                <span class="badge badge-pill text-right text-capitalize badge-success d-inline-block mb-2 mb-md-0 mr-md-3">Webinar</span>
+                                <br class="d-md-none" />
+                                <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Adil Leghari, Paul Broadwith, George James</span>
+                            </p>
+                            <p>
+                                Together, Ansible and Chocolatey bring faster and more secure deployments to your Windows environments. Use Chocolatey for software/package management and Ansible to automate and guarantee the desired state of your Windows infrastructure,
+                                allowing your team to securely deploy applications faster than ever. <strong>Separate Registration Required!</strong>
+                            </p>
+                            <a class="btn btn-outline-success btn-on-demand" target="_blank" href="https://chocolatey.zoom.us/webinar/register/9116058944622/WN_4sBxu-fqRRSL3-fglGqclQ">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <div class="mb-3">
+                    <input class="countdown-date-time" type="hidden" value="2020/12/11 16:00:00 UTC" />
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3 mb-md-0">
+                            <a href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "chocolatey-integrations-discussion"})" title="Chocolatey Integrations Discussion (including SCCM & Intune)">
+                                <img class="img-fluid shadow" src="@Url.Content("~/content/images/videos/004-09.jpg")" alt="Chocolatey Integrations Discussion (including SCCM & Intune)" title="Chocolatey Integrations Discussion (including SCCM & Intune)" />
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <h5>Chocolatey Integrations Discussion (including SCCM & Intune)</h5>
+                            <p>
+                                <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
+                                <br class="d-md-none" />
+                                <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Chocolatey Team</span>
+                            </p>
+                            <p>
+                                Are you using Configuration Management platforms like Puppet, SCCM, or Intune? Good news! Chocolatey can integrate with all these tools as well!
+                                Come find out how.
+                            </p>
+                            <a class="btn btn-outline-success btn-replay" href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "chocolatey-integrations-discussion"})" title="Chocolatey Integrations Discussion (including SCCM & Intune)">Watch On-Demand Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <div class="mb-3">
+                    <input class="countdown-date-time" type="hidden" value="2020/12/14 16:00:00 UTC" />
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3 mb-md-0">
+                            <a href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "exploring-self-service-anywhere"})" title="Exploring Self-Service Anywhere">
+                                <img class="img-fluid shadow" src="@Url.Content("~/content/images/videos/004-10.jpg")" alt="Exploring Self-Service Anywhere" title="Exploring Self-Service Anywhere" />
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <h5>Exploring Self-Service Anywhere</h5>
+                            <p>
+                                <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
+                                <br class="d-md-none" />
+                                <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Paul Broadwith</span>
+                            </p>
+                            <p>
+                                Join Paul and discover how Chocolatey can empower your users to manage software on their computers, freeing up your IT team and other resources by harnessing the power of Chocolatey GUI and Chocolatey For Business.
+                            </p>
+                            <a class="btn btn-outline-success btn-replay" href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "exploring-self-service-anywhere"})" title="Exploring Self-Service Anywhere">Watch On-Demand Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <div class="mb-3">
+                    <input class="countdown-date-time" type="hidden" value="2020/12/15 16:00:00 UTC" />
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3 mb-md-0">
+                            <a href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "show-and-tell"})" title="R&D Show and Tell">
+                                <img class="img-fluid shadow" src="@Url.Content("~/content/images/videos/004-11.jpg")" alt="R&D Show and Tell" title="R&D Show and Tell" />
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <h5>R&D Show and Tell</h5>
+                            <p>
+                                <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
+                                <br class="d-md-none" />
+                                <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Rob Reynolds, Stephen Valdinger</span>
+                            </p>
+                            <p>
+                                Our R&D team and especially Stephen is always coming up with some really cool concepts, but not all of them make it into the product.
+                            </p>
+                            <a class="btn btn-outline-success btn-replay" href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "show-and-tell"})" title="R&D Show and Tell">Watch On-Demand Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <div class="mb-3">
+                    <input class="countdown-date-time" type="hidden" value="2020/12/16 16:00:00 UTC" />
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3 mb-md-0">
+                            <a href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "q-and-a-panel-session"})" title="Q&A Panel Session, Roadmap & Wrap">
+                                <img class="img-fluid shadow" src="@Url.Content("~/content/images/videos/004-12.jpg")" alt="Q&A Panel Session, Roadmap & Wrap" title="Q&A Panel Session, Roadmap & Wrap" />
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <h5>Q&A Panel Session & Wrap</h5>
+                            <p>
+                                <span class="badge badge-pill text-right text-capitalize badge-secondary d-inline-block mb-2 mb-md-0 mr-md-3">Livestream</span>
+                                <br class="d-md-none" />
+                                <span><i class="fas fa-microphone text-secondary mr-1"></i>Speakers: Chocolatey Team</span>
+                            </p>
+                            <p>
+                                We’ll take live questions from the Chocolatey Community here, to be submitted via the chat. If we have time, we’ll cover some common questions posed by Organizations we’ve helped.
+                            </p>
+                            <a class="btn btn-outline-success btn-replay" href="@Url.RouteUrl(RouteName.ResourceName, new {resourceType = "12-days-of-chocolatey", resourceName = "q-and-a-panel-session"})" title="Q&A Panel Session, Roadmap & Wrap">Watch On-Demand Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="py-3 py-lg-5 pb-lg-0">
