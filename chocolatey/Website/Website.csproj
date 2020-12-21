@@ -1138,6 +1138,12 @@
     <Content Include="Content\Images\dep-graph.svg" />
     <Content Include="Content\Images\docs-screenshot-dark.jpg" />
     <Content Include="Content\Images\docs-screenshot-light.jpg" />
+    <Content Include="Content\Images\deployment-pattern-internal-dark.png" />
+    <Content Include="Content\Images\deployment-pattern-internal-light.png" />
+    <Content Include="Content\Images\deployment-pattern-isolated-dark.png" />
+    <Content Include="Content\Images\deployment-pattern-isolated-light.png" />
+    <Content Include="Content\Images\deployment-pattern-remote-dark.png" />
+    <Content Include="Content\Images\deployment-pattern-remote-light.png" />
     <Content Include="Content\Images\docs\chocolateyicon.gif" />
     <Content Include="Content\Images\docs\DownloadChocolateyPackage.png" />
     <Content Include="Content\Images\download.png" />
@@ -1225,6 +1231,7 @@
     <Content Include="Content\Images\speakers\rob-reynolds.jpg" />
     <Content Include="Content\Images\speakers\stephen-valdinger.jpg" />
     <Content Include="Content\Images\stackexchange.png" />
+    <Content Include="Content\Images\stock\people-whiteboard-600.jpg" />
     <Content Include="Content\Images\styleguide\logo-space.jpg" />
     <Content Include="Content\Images\sync-watch.png" />
     <Content Include="Content\Images\tangled-arrows.png" />
@@ -1526,6 +1533,7 @@
     <Content Include="Views\Shared\_LivestreamShare.cshtml" />
     <Content Include="Views\Events\Files\01-07-ChocolateyAndAnsible.md" />
     <Content Include="Views\Events\ChocolateyAndAnsible.cshtml" />
+    <Content Include="Views\Solutions\SecureOfflineDeployments.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Images\videos\**\*.jpg" />
