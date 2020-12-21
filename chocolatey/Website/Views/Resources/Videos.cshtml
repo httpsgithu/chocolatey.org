@@ -44,6 +44,10 @@
                         {
                             @Url.RouteUrl(RouteName.ResourceName, new { resourceType= "case-studies", resourceName = post.UrlPath })
                         }
+                        else if (post.Type.Contains("Feature") && post.Tags.Contains("12-days-of-chocolatey"))
+                        {
+                            @Url.RouteUrl(RouteName.ResourceName, new { resourceType= "12-days-of-chocolatey", resourceName = post.UrlPath })
+                        }
                         else if (post.Type.Contains("Feature"))
                         {
                             @Url.RouteUrl(RouteName.ResourceName, new { resourceType= "features", resourceName = post.UrlPath })
@@ -63,6 +67,10 @@
                                 {
                                     <span class="fas fa-briefcase" alt="Case Studies"></span>
                                 }
+                                else if (post.Type.Contains("Feature") && post.Tags.Contains("12-days-of-chocolatey"))
+                                {
+                                    <span class="fas fa-holly-berry" alt="12 Days of Chocolatey"></span>
+                                }
                                 else if (post.Type.Contains("Feature"))
                                 {
                                     <span class="fas fa-star" alt="Feature"></span>
@@ -70,11 +78,20 @@
                                 <span>
                                     @if (post.Type.Contains("Feature") && post.Tags.Contains("c4b-feature"))
                                     {
-                                        <text>C4B </text>
-                                    } else if (post.Type.Contains("Feature") && post.Tags.Contains("open-source-feature")) { 
-                                        <text>Open Source </text>
+                                        <text>C4B </text>@post.Type
                                     }
-                                    @post.Type
+                                    else if (post.Type.Contains("Feature") && post.Tags.Contains("open-source-feature"))
+                                    {
+                                        <text>Open Source </text>@post.Type
+                                    }
+                                    else if (post.Type.Contains("Feature") && post.Tags.Contains("12-days-of-chocolatey"))
+                                    {
+                                        <text>12 Days of Chocolatey</text>
+                                    }
+                                    else
+                                    {
+                                        @post.Type
+                                    }
                                 </span>
                             </div>
                             <div class="card-body p-0">

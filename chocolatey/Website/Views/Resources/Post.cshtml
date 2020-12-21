@@ -1,7 +1,14 @@
 ﻿@model ResourceViewModel
 
 @{
-    ViewBag.Title = Model.Type + "- " + Model.Title;
+    if (Model.Type.Contains("Feature") && Model.Tags.Contains("12-days-of-chocolatey"))
+    {
+        ViewBag.Title = "12 Days of Chocolatey- " + Model.Title;
+    }
+    else
+    {
+        ViewBag.Title = Model.Type + "- " + Model.Title;
+    }
     Bundles.Reference("Content/dist/chocolatey.slim.css");
     Bundles.Reference("Scripts");
 }
@@ -18,6 +25,10 @@
     else if (Model.Type.Contains("Case Study"))
     {
         <link rel="canonical" href="https://chocolatey.org/resources/case-studies/@Model.UrlPath" />
+    }
+    else if (Model.Type.Contains("Feature") && Model.Tags.Contains("12-days-of-chocolatey"))
+    {
+        <link rel="canonical" href="https://chocolatey.org/resources/12-days-of-chocolatey/@Model.UrlPath" />
     }
     else if (Model.Type.Contains("Feature"))
     {
@@ -81,11 +92,15 @@
                     {
                         <li class="breadcrumb-item"><a href="@Url.RouteUrl(RouteName.Resources, new {resourceType = "features"})#open-source">Open Source Features</a></li>
                     }
+                    else if (Model.Type.Contains("Feature") && Model.Tags.Contains("12-days-of-chocolatey"))
+                    {
+                        <li class="breadcrumb-item"><a href="@Url.RouteUrl(RouteName.Resources, new {resourceType = "12-days-of-chocolatey"})">12 Days of Chocolatey</a></li>
+                    }
                     @if (Model.Type.Contains("Customer Success Story"))
                     {
                         <li class="breadcrumb-item active" aria-current="page">@Model.Name at @Model.Company</li>
                     }
-                    else if (Model.Type.Contains("Video") || Model.Type.Contains("Case Study") || Model.Type.Contains("Feature"))
+                    else
                     {
                         <li class="breadcrumb-item active" aria-current="page">@Model.Title</li>
                     }
@@ -100,7 +115,8 @@
                     <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-size="large">Tweet</a>
                 </li>
                 <li class="list-inline-item">
-                    <script type="IN/Share" data-url="https://chocolatey.org/@Request.RawUrl"></script>
+                    <script type="IN/Share" data-url="https://chocolatey.org/@Request.RawUrl">
+                    </script>
                 </li>
             </ul>
         </div>
@@ -130,11 +146,18 @@
                     <p class="mb-0"><i>@Model.Name, @Model.Position</i></p>
                 </div>
             }
-            @if (!Model.Type.Contains("Customer Success Story") && String.IsNullOrEmpty(Model.Post))
+            @if (!Model.Type.Contains("Customer Success Story") && String.IsNullOrEmpty(Model.Post) || Model.Type.Contains("Feature") && Model.Tags.Contains("12-days-of-chocolatey"))
             {
                 <div class="col-12 mx-auto pt-3 pt-lg-5 text-center">
                     <h5>@Html.Raw(Model.Summary)</h5>
                 </div>
+
+                if (!String.IsNullOrEmpty(Model.Name))
+                {
+                    <div class="col-12 mx-auto pt-3 text-center">
+                        <p>@Html.Raw(Model.Name)</p>
+                    </div>
+                }
             }
             @if (!String.IsNullOrEmpty(Model.Post))
             {

@@ -21,24 +21,50 @@
     <div class="container">
         <div class="row home-list mt-4">
             <div class="col-12 mb-4">
-                <a href="@Url.RouteUrl(RouteName.Resources, new {resourceType = "features"})#c4b">
+                <a href="@Url.RouteUrl(RouteName.Resources, new {resourceType = "12-days-of-chocolatey"})">
                     <div class="card resource-new">
                         <div class="card-body p-0 d-flex justify-content-center flex-column">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <div class="d-flex justify-content-center flex-column text-center position-relative overflow-hidden">
                                         <div class="ribbon bg-white text-success d-lg-none">NEW!</div>
+                                        <span class="fas fa-holly-berry display-1"></span>
+                                        <h2 class="mb-0 mx-3">12 Days of Chocolatey Feature Video Series</h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 pl-lg-0">
+                                    <div class="p-3 pl-lg-0 h-100 d-flex align-items-center justify-content-center flex-column position-relative overflow-hidden">
+                                        <div class="ribbon bg-success text-white d-none d-lg-block">NEW!</div>
+                                        <h2 class="text-center d-none d-lg-block">12 Days of Chocolatey Feature Video Series</h2>
+                                        <p>
+                                            Follow along with this video series to relive the 12 Days of Chocolatey livestream event (aka Chocolatey Fest 2020)! 
+                                            You'll learn about the Quick Deployment Environment (QDE), the Choco CCM Module, Self-Service Anywhere, and hear many other 
+                                            exciting new announcements from the Chocolatey team!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 mb-4">
+                <a href="@Url.RouteUrl(RouteName.Resources, new {resourceType = "features"})#c4b">
+                    <div class="card resource-new">
+                        <div class="card-body p-0 d-flex justify-content-center flex-column">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="d-flex justify-content-center flex-column text-center position-relative overflow-hidden">
                                         <span class="fas fa-star display-1"></span>
                                         <h2 class="mb-0 mx-3">Chocolatey for Business Feature Video Series</h2>
                                     </div>
                                 </div>
                                 <div class="col-lg-8 pl-lg-0">
                                     <div class="p-3 pl-lg-0 h-100 d-flex align-items-center justify-content-center flex-column position-relative overflow-hidden">
-                                        <div class="ribbon bg-success text-white d-none d-lg-block">NEW!</div>
                                         <h2 class="text-center d-none d-lg-block">Chocolatey for Business Feature Video Series</h2>
                                         <p>
-                                            In this video series, come take a tour of the many features available in our Chocolatey for Business offering. 
-                                            Many organizations choose Chocolatey for Business when they want to scale out their solution across thousands of nodes, deploy rapidly and reliably every time, 
+                                            In this video series, come take a tour of the many features available in our Chocolatey for Business offering.
+                                            Many organizations choose Chocolatey for Business when they want to scale out their solution across thousands of nodes, deploy rapidly and reliably every time,
                                             mitigate risks with a greatly-simplified patching workflow, and access a Support Team that will guide you on your automation journey.
                                         </p>
                                     </div>
@@ -134,78 +160,24 @@
     <div class="shape-border shape-border-top shape-border-light"></div>
     <section class="py-3 py-lg-5">
         <div class="container">
-            <h1 class="mb-5 text-center"><strong>COVID-19 Resources</strong></h1>
-            @Html.Partial("~/Views/Pages/_SelfServiceResources.cshtml")
-            @*TODO: Put this section back when timing is more relevent and remove COVID-19 resources*@
-            @*<h1 class="mb-5 text-center"><strong>Helpful Resources</strong></h1>
+            <h1 class="mb-5 text-center"><strong>12 Days of Chocolatey Feature Video Series</strong></h1>
             <div class="row resource-list resource-d-3">
                 @foreach (var post in @Model)
                 {
-                    if (post.Tags.Contains("showcase"))
+                    if (post.Type.Contains("Feature") && post.Tags.Contains("12-days-of-chocolatey"))
                     {
-
                         <div class="col-lg-4 col-sm-6 mb-4">
-                            <a href="
-                               @if (post.Type.Contains("Customer Success Story"))
-                                {
-                                    @Url.RouteUrl(RouteName.ResourceName, new { resourceType= "success-stories", resourceName = post.UrlPath })
-                                }
-                                else if (post.Type.Contains("Video"))
-                                {
-                                    @Url.RouteUrl(RouteName.ResourceName, new { resourceType= "videos", resourceName = post.UrlPath })
-                                }
-                                else if (post.Type.Contains("Case Study"))
-                                {
-                                    @Url.RouteUrl(RouteName.ResourceName, new { resourceType= "case-studies", resourceName = post.UrlPath })
-                                }
-                                else if (post.Type.Contains("Feature"))
-                                {
-                                    @Url.RouteUrl(RouteName.ResourceName, new { resourceType= "features", resourceName = post.UrlPath })
-                                }
-                            ">
+                            <a href="@Url.RouteUrl(RouteName.ResourceName, new { resourceType= "12-days-of-chocolatey", resourceName = post.UrlPath })">
                                 <div class="card h-100">
-                                    <div class="card-header font-weight-bold bg-medium-light text-dark text-center">
-                                        @if (post.Type.Contains("Customer Success Story"))
-                                        {
-                                            <span class="fas fa-trophy" alt="Customer Success Stories"></span>
-                                        }
-                                        else if (post.Type.Contains("Video"))
-                                        {
-                                            <span class="fas fa-play" alt="Videos"></span>
-                                        }
-                                        else if (post.Type.Contains("Case Study"))
-                                        {
-                                            <span class="fas fa-briefcase" alt="Case Studies"></span>
-                                        }
-                                        else if (post.Type.Contains("Feature"))
-                                        {
-                                            <span class="fas fa-star" alt="Feature"></span>
-                                        }
-                                        <span>
-                                            @if (post.Type.Contains("Feature") && post.Tags.Contains("c4b-feature"))
-                                            {
-                                                <text>C4B </text>
-                                            }
-                                            else if (post.Type.Contains("Feature") && post.Tags.Contains("open-source-feature"))
-                                            {
-                                                <text>Open Source </text>
-                                            }
-                                            @post.Type
-                                        </span>
+                                    <div class="card-header font-weight-bold bg-medium-light text-center">
+                                        <span class="fas fa-holly-berry" alt="12 Days of Chocolatey Feature Video Series"></span>
+                                        <span>12 Days of Chocolatey</span>
                                     </div>
                                     <div class="card-body p-0">
                                         @Html.Raw(post.Image)
                                     </div>
                                     <div class="card-footer">
-                                        @if (post.Type.Contains("Customer Success Story"))
-                                        {
-                                            <h5>@post.Company</h5>
-                                            <p><small><i>@post.Name, @post.Position</i></small></p>
-                                        }
-                                        else
-                                        {
-                                            <h5>@post.Title</h5>
-                                        }
+                                        <h5>@post.Title</h5>
                                     </div>
                                 </div>
                             </a>
@@ -215,9 +187,9 @@
             </div>
             <div class="row text-center">
                 <div class="col-12">
-                    <a href="@Url.RouteUrl(RouteName.Resources, new {resourceType = "videos"})" class="btn btn-light">See More Videos</a>
+                    <a href="@Url.RouteUrl(RouteName.Resources, new {resourceType = "12-days-of-chocolatey"})" class="btn btn-primary">See More of This Series</a>
                 </div>
-            </div>*@
+            </div>
         </div>
     </section>
     <div class="shape-border shape-border-bottom"></div>

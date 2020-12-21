@@ -1534,6 +1534,17 @@
     <Content Include="Views\Events\Files\01-07-ChocolateyAndAnsible.md" />
     <Content Include="Views\Events\ChocolateyAndAnsible.cshtml" />
     <Content Include="Views\Solutions\SecureOfflineDeployments.cshtml" />
+    <Content Include="Views\Resources\12DaysOfChocolatey.cshtml" />
+    <Content Include="Views\Resources\Files\004-01-ThePowereOfSimple.md" />
+    <Content Include="Views\Resources\Files\004-02-RedefiningChocolatey.md" />
+    <Content Include="Views\Resources\Files\004-04-ChocolateyInTheOrganization.md" />
+    <Content Include="Views\Resources\Files\004-05-BuildingPackages.md" />
+    <Content Include="Views\Resources\Files\004-06-ExploringQuickDeploymentEnvironmentAndOfflineInternalEnvironments.md" />
+    <Content Include="Views\Resources\Files\004-07-ChocoCcmModule.md" />
+    <Content Include="Views\Resources\Files\004-09-ChocolateyIntegrationsDiscussion.md" />
+    <Content Include="Views\Resources\Files\004-10-ExploringSelfServiceAnywhere.md" />
+    <Content Include="Views\Resources\Files\004-11-ShowAndTell.md" />
+    <Content Include="Views\Resources\Files\004-12-QAndAPanelSession.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Images\videos\**\*.jpg" />
