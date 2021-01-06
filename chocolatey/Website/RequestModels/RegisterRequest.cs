@@ -29,7 +29,7 @@ namespace NuGetGallery
 
         [AllowHtml]
         [Required]
-        [Compare("Password")]
+        [System.ComponentModel.DataAnnotations.Compare("Password")]
         [DataType(DataType.Password)]
         [StringLength(64, MinimumLength = 7)]
         [Display(Name = "Password Confirmation")]

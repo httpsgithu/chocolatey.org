@@ -18,6 +18,7 @@
 
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NuGetGallery
 {
@@ -40,6 +41,7 @@ namespace NuGetGallery
         public int ModuleQuestionCount { get; set; }
         public int Order { get; set; }
 
+        [NotMapped]
         public CourseModuleNameType CourseModuleNameType { get; set; }
         [MaxLength(100)]
         [Column("CourseModuleNameType")]

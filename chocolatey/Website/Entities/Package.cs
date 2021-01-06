@@ -19,6 +19,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NuGetGallery
 {
@@ -117,6 +118,7 @@ namespace NuGetGallery
 
         public bool Listed { get; set; }
 
+        [NotMapped]
         public PackageStatusType Status { get; set; }
         [MaxLength(100)]
         [Column("Status")]
@@ -130,6 +132,7 @@ namespace NuGetGallery
             }
         }
 
+        [NotMapped]
         public PackageSubmittedStatusType SubmittedStatus { get; set; }
         [MaxLength(50)]
         [Column("SubmittedStatus")]
@@ -156,6 +159,7 @@ namespace NuGetGallery
         /// </remarks>
         public string ReviewComments { get; set; }
 
+        [NotMapped]
         public PackageAutomatedReviewResultStatusType PackageTestResultStatus { get; set; }
         [MaxLength(50)]
         [Column("PackageTestResultStatus")]
@@ -173,6 +177,7 @@ namespace NuGetGallery
         public string PackageTestResultUrl { get; set; }
         public DateTime? PackageTestResultDate { get; set; }
 
+        [NotMapped]
         public PackageAutomatedReviewResultStatusType PackageValidationResultStatus { get; set; }
         [MaxLength(50)]
         [Column("PackageValidationResultStatus")]
@@ -189,6 +194,7 @@ namespace NuGetGallery
 
         public DateTime? PackageCleanupResultDate { get; set; }
 
+        [NotMapped]
         public PackageDownloadCacheStatusType DownloadCacheStatus { get; set; }
         [MaxLength(50)]
         [Column("DownloadCacheStatus")]
@@ -207,6 +213,7 @@ namespace NuGetGallery
         /// </remarks>
         public string DownloadCache { get; set; }
 
+        [NotMapped]
         public PackageScanStatusType PackageScanStatus { get; set; }
         [MaxLength(50)]
         [Column("PackageScanStatus")]
