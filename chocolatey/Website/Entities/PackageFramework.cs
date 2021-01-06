@@ -13,7 +13,7 @@ namespace NuGetGallery
 
         public Package Package { get; set; }
         //public int PackageKey { get; set; }
-        
+
         [StringLength(256)]
         public string TargetFramework
         {
