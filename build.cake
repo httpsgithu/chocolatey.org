@@ -164,7 +164,6 @@ Task("Build")
         PlatformTarget = PlatformTarget.MSIL,
         Targets = { "Build" }
     }
-    .WithProperty("CodeAnalysis", "true")
     .WithProperty("OutDir", buildData.BuildArtifactsDirectoryPath.FullPath)
     );
 });
