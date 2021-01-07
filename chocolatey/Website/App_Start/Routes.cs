@@ -345,6 +345,13 @@ namespace NuGetGallery
 
             routes.MapRoute(RouteName.Stats, "stats", MVC.Pages.Stats());
 
+            routes.MapRoute(
+                "rss feed", "feed.rss", new
+                {
+                    controller = "RSS",
+                    Action = "feed.rss"
+                });
+
             routes.Add(new JsonRoute("json/{controller}"));
 
             routes.MapRouteSeo(
