@@ -122,7 +122,7 @@ namespace NuGetGallery
 
             Trace.TraceInformation("[{0}] - Backgrounding the update and notify on package submission.".format_with(requestInformation));
             // Run the following without stopping grabbing the item
-            TaskEx.Run(() =>
+            Task.Run(() =>
             {
                 Trace.TraceInformation("[{0}] - Starting Update and Notify.".format_with(requestInformation));
                 InvalidateAndRegeneratePackageCaches(package.PackageRegistration.Id, package.Version, package.IconUrl, package.Key, package.PackageRegistration.Key, requestInformation);
@@ -1267,18 +1267,18 @@ namespace NuGetGallery
         //private void NotifyIndexingService()
         //{
         //    // run on background thread
-        //    TaskEx.Run(() => indexingSvc.UpdateIndex(forceRefresh:false));
+        //    Task.Run(() => indexingSvc.UpdateIndex(forceRefresh:false));
         //}
 
         private void NotifyIndexingService(Package package)
         {
             // run on background thread
-            TaskEx.Run(() => indexingSvc.UpdatePackage(package));
+            Task.Run(() => indexingSvc.UpdatePackage(package));
         }
 
         private void InvalidateCache(string packageRegistrationId, int packageRegistrationKey)
         {
-            TaskEx.Run(
+            Task.Run(
                 () =>
                 {
                     Cache.InvalidateCacheItem(string.Format("packageregistration-{0}", packageRegistrationId.to_lower()));
@@ -1295,7 +1295,7 @@ namespace NuGetGallery
 
         private void NotifyForModeration(Package package, string comments)
         {
-            TaskEx.Run(() => messageSvc.SendPackageModerationEmail(package, comments, Constants.MODERATION_SUBMITTED, null));
+            Task.Run(() => messageSvc.SendPackageModerationEmail(package, comments, Constants.MODERATION_SUBMITTED, null));
         }
     }
 }

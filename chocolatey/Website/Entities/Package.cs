@@ -1,15 +1,15 @@
-﻿// Copyright 2011 - Present RealDimensions Software, LLC, the original 
+﻿// Copyright 2011 - Present RealDimensions Software, LLC, the original
 // authors/contributors from ChocolateyGallery
 // at https://github.com/chocolatey/chocolatey.org,
-// and the authors/contributors of NuGetGallery 
+// and the authors/contributors of NuGetGallery
 // at https://github.com/NuGet/NuGetGallery
-//  
+//
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
-// 
+//
 //   http://www.apache.org/licenses/LICENSE-2.0
-// 
+//
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -19,6 +19,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NuGetGallery
 {
@@ -117,6 +118,7 @@ namespace NuGetGallery
 
         public bool Listed { get; set; }
 
+        [NotMapped]
         public PackageStatusType Status { get; set; }
         [MaxLength(100)]
         [Column("Status")]
@@ -130,6 +132,7 @@ namespace NuGetGallery
             }
         }
 
+        [NotMapped]
         public PackageSubmittedStatusType SubmittedStatus { get; set; }
         [MaxLength(50)]
         [Column("SubmittedStatus")]
@@ -156,6 +159,7 @@ namespace NuGetGallery
         /// </remarks>
         public string ReviewComments { get; set; }
 
+        [NotMapped]
         public PackageAutomatedReviewResultStatusType PackageTestResultStatus { get; set; }
         [MaxLength(50)]
         [Column("PackageTestResultStatus")]
@@ -173,6 +177,7 @@ namespace NuGetGallery
         public string PackageTestResultUrl { get; set; }
         public DateTime? PackageTestResultDate { get; set; }
 
+        [NotMapped]
         public PackageAutomatedReviewResultStatusType PackageValidationResultStatus { get; set; }
         [MaxLength(50)]
         [Column("PackageValidationResultStatus")]
@@ -189,6 +194,7 @@ namespace NuGetGallery
 
         public DateTime? PackageCleanupResultDate { get; set; }
 
+        [NotMapped]
         public PackageDownloadCacheStatusType DownloadCacheStatus { get; set; }
         [MaxLength(50)]
         [Column("DownloadCacheStatus")]
@@ -207,6 +213,7 @@ namespace NuGetGallery
         /// </remarks>
         public string DownloadCache { get; set; }
 
+        [NotMapped]
         public PackageScanStatusType PackageScanStatus { get; set; }
         [MaxLength(50)]
         [Column("PackageScanStatus")]

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.Versioning;
 using NuGet;
 
@@ -13,7 +14,7 @@ namespace NuGetGallery
 
         public Package Package { get; set; }
         //public int PackageKey { get; set; }
-        
+
         [StringLength(256)]
         public string TargetFramework
         {
